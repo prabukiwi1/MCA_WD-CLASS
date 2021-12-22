@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: header 3s ease-in-out;
+}
+@keyframes header {
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+}
+.main
+{
+    width: 100%;
+    display: flex;
+}
+.content
+{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color:white;
+    overflow: hidden;
+    animation: content 3s ease-in-out;
+}
+@keyframes content {
+    0%
+    {
+        opacity: 0;
+        transform:translateX(-50%)
+    }
+    
+}
+
+.content h2{
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 8px;
+}
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    color: yellow;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding: 15px 25px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+button:hover{
+    background: rgb(255, 10, 10);
+}
+.image
+{
+    width: 50%;
+    margin-top: 8%;
+    animation: image 10s ease-in-out;
+    z-index: -1;
+}
+@keyframes image {
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100% 
+    {
+        transform: translateX(-220%);
+    }
+    
+}
+img{
+    width: 40rem;
+}
+@media screen and (max-width:1200px) {
+    .header
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 20rem;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .header
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .content h1
+    {
+        margin-bottom: 5%;
+    }
+    .content h3
+    {
+        margin-bottom: 5%;
+    }
+    .content p
+    {
+        margin-bottom: 5%;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 30rem;
+    }
+    
+}

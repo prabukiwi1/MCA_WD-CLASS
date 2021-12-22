@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		p {
+			border: 1px solid black;
+			margin-bottom: 15px;
+		}
+		.p1
+		{
+			background-color: red;
+			width: 300px;
+			height: 300px;
+		}
+		.p2
+		{
+			background-color: blue;
+			width: 80px;
+			height: 80px;
+		}
+		@media (min-width: 900px)
+		{
+			.p1
+			{
+				width: 80%;
+			}
+			.p2
+			{
+				height: 150px;
+				width: 150px;
+			}
+		}
+		@media (min-width: 500px) and (max-width: 899px)
+		{
+			.p1
+			{
+				width: 50%;
+			}
+			.p2
+			{
+				height: 100px;
+				width: 100px;
+			}
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media</title>
+</head>
+<body>
+	<h1>Media Query</h1>
+	<p class="p1"></p>
+	<p class="p2"></p>
+
+</body>
+</html>
