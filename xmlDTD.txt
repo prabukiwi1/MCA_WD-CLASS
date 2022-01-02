@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employee SYSTEM "t.dtd">
+<Employee>
+	<emp>
+		<id>1</id>
+		<name>ABC</name>
+		<salary>1200</salary>
+	</emp>
+	<emp>
+		<id>2</id>
+		<name>XYZ</name>
+		<salary>4000</salary>
+	</emp>
+	<emp>
+		<id>3</id>
+		<name>XYZ</name>
+		<salary>4000</salary>
+	</emp>
+</Employee>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Employee (emp+)>
+<!ELEMENT emp (id,name,salary)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
