@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ChristUniversity">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Faculty" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Name" type="xs:string"></xs:element>
+<xs:element name="Age" type="xs:integer"></xs:element>
+<xs:element name="Salary" type="MySal"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:simpleType name="MySal">
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="10000"></xs:minInclusive>
+<xs:maxInclusive value="100000"></xs:maxInclusive>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
