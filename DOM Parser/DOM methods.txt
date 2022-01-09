@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web</title>
+    <script type="text/javascript">
+function display()
+{
+    var x=document.getElementById("test");
+    var y=x.getElementsByTagName("Faculty")[2];
+    var name="Name :" +y.getElementsByTagName("Name")[0].firstChild.nodeValue;
+    var age="Age :" +y.getElementsByTagName("Age")[0].firstChild.nodeValue;
+    var salary="Salary :" +y.getElementsByTagName("Salary")[0].firstChild.data;
+    alert("Faculty Details:\n\n" +name+ "\n" +age+ "\n" +salary);
+}
+    </script>
+</head>
+<body>
+    <xml id="test" style="display: none;">
+        <University>
+            <Faculty>
+            <Name>Rithul</Name>
+            <Age>22</Age>
+            <Salary>150000</Salary>
+            </Faculty>
+            <Faculty>
+            <Name>Indu</Name>
+            <Age>33</Age>
+            <Salary>250000</Salary>
+            </Faculty>
+            <Faculty>
+            <Name>Abhinav</Name>
+            <Age>27</Age>
+            <Salary>200000</Salary>
+            </Faculty>
+            </University>
+    </xml>
+    <a href="javascript:display()">Facult Details</a>
+</body>
+</html>
