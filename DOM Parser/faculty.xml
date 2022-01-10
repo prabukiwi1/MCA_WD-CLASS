@@ -1,0 +1,26 @@
+<University>
+<Faculty>
+<Name>Rithul</Name>
+<Age>22</Age>
+<Department>Computer Science</Department>
+<Salary>150000</Salary>
+</Faculty>
+<Faculty>
+<Name>Indu</Name>
+<Age>33</Age>
+<Department>Commerce</Department>
+<Salary>250000</Salary>
+</Faculty>
+<Faculty>
+<Name>Abhinav</Name>
+<Age>27</Age>
+<Department>Mathematics</Department>
+<Salary>200000</Salary>
+</Faculty>
+<Faculty>
+<Name>Kevin</Name>
+<Age>27</Age>
+<Department>Management</Department>
+<Salary>200000</Salary>
+</Faculty>
+</University>
