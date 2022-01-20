@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(event)
+        {
+            let code=event.which;
+            if(code>47&&code<58)
+            return false;
+            else
+            return true;
+        }
+        function validate()
+        {
+           var username=document.getElementById("uname");
+           var password=document.getElementById("pass");
+           if(username.value.trim()=="")
+           {
+               alert("Blank Username");
+               username.style.border="solid 3px red";
+               document.getElementById("lbuser").style.visibility="visible";
+               return false;
+           }
+           else if(password.value.trim()=="")
+           {
+               alert("Blank Password");
+               return false;
+           }
+           else if(password.value.trim().length<5)
+           {
+               alert("Password is too short");
+               return false;
+           }
+        }
+    </script>
+    <form onsubmit="return validate()" action="index.html">
+        <input id="uname" onkeypress="return test(event)" placeholder="UserName" type="text"/>
+        <label id="lbuser" style="color: red; visibility: hidden;">Invalid User</label><br><br>
+        <input id="pass" placeholder="PassWord" type="password"/><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
