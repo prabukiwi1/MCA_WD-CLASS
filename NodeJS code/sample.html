@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="myctrl">
+    <table cellpadding="2" cellspacing="2" border="1">
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>SALARY</th>
+    <th>GENDER</th>
+</tr>
+<tr ng-repeat="item in names">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.gender}}</td>
+    <td>{{item.salary}}</td>
+</tr>
+
+    </table>
+    
+</body>
+</html>
